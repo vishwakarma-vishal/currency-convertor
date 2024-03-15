@@ -1,0 +1,187 @@
+* {
+    font-family: calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    font-size: 35px;
+}
+
+.container {
+    width: 35vw;
+    height: auto;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+h1 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.55em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 10px;
+}
+
+#amount {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 5px 0px 20px 0px;
+    font-size: 0.5em;
+    padding-left: 10px;
+}
+
+.divide {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 35%;
+    height: 60px;
+}
+
+.divide :nth-child(2) {
+    text-align: center;
+}
+
+#arrow {
+    padding-top: 30px;
+    height: 100%;
+}
+
+.box label {
+    width: 100%;
+    height: 20px;
+}
+
+.dropdown {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.dropdown img {
+    width: 35%;
+}
+
+.dropdown select {
+    width: 100%;
+    height: 80%;
+    border: none;
+    padding: 0;
+    font-size: 0.4em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.dropdown-list option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-list option:hover {
+    background-color: #f0f0f0;
+    color: green;
+}
+
+/* Custom scrollbar */
+.dropdown-list::-webkit-scrollbar {
+    width: 10px;
+    /* Adjust width as needed */
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+
+#result {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px 20px 0px;
+    margin: 20px 0px 5px 0px;
+    font-size: 0.5em;
+    color: rgb(50, 145, 50);
+    font-weight: 600;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 0.5em;
+    font-weight: 600;
+    color: #fff;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* for responsiveness */
+@media (max-width: 330px) {
+    .container {
+        width: 95vw;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 500px) {
+    .container {
+        width: 92vw;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 669px) {
+    .container {
+        width: 75vw;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 829px) {
+    .container {
+        width: 55vw;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 1024px) {
+    .container {
+        width: 45vw;
+    }
+}
